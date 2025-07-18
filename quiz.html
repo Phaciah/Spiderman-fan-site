@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz | Spider-Man Fan Site</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Which Spider-Man Are You?</h1>
+        <nav>
+            <ul>
+                <li><a href='index.html'>Home</a></li>
+                <li><a href='characters.html'>Characters</a></li>
+                <li><a href='movies.html'>Movies</a></li>
+                <li><a href='quiz.html'>Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class='quiz'>
+        <h2>Find Out Your Spider-Man Identity!</h2>
+        <form id='quizForm'>
+            <label>Favorite color?</label><br>
+            <input type='radio' name='color' value='red'> Red<br>
+            <input type='radio' name='color' value='black'> Black<br>
+            <input type='radio' name='color' value='blue'> Blue<br>
+
+            <label>Personality type?</label><br>
+            <input type='radio' name='personality' value='brave'> Brave<br>
+            <input type='radio' name='personality' value='intelligent'> Intelligent<br>
+            <input type='radio' name='personality' value='kind'> Kind<br>
+
+            <button type='button' onclick='calculateResult()'>Get Result</button>
+        </form>
+        <p id='result'></p>
+    </section>
+</body>
+</html>
